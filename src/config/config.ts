@@ -11,8 +11,7 @@ export const Config: any = {
     swagger: "on"
   },
   fileupload: {
-    imgDirname: process.env.FILE_IMGDIR,
-    formFileDirname: process.env.FILE_FORMFILEDIR,
+    shpFileDirname: process.env.FILE_SHPFILEDIR,
     maxsize: process.env.FILE_MAXSIZE,
     description: process.env.FILE_MAXSIZE_DESC
   },
