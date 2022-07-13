@@ -13,11 +13,11 @@ info:
     - url: https://api.gigantic-server.com/v1
       description: Production server
 paths:
-  $ref: "./path.yaml"
+  $ref: "./docs/path.yaml"
 tags:
   - name: "common"
     description: ""
-
+  - name: "ogr2ogr"
 components:
   responses:
     SuccessOnlyResponse:
