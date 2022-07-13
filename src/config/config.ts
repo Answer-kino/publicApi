@@ -26,5 +26,8 @@ export const Config: any = {
       database: process.env.DB_DATABASE!,
       connectionLimit: Number(process.env.DB_CONNECTIONLIMIT)
     }
-  ]
+  ],
+  apiKey: {
+    nsdi: process.env.NSDI
+  }
 };
