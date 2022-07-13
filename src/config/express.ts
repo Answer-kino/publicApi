@@ -6,6 +6,7 @@ import swaggerUi from "swagger-ui-express";
 import { Config } from "src/config/config";
 import { logger, stream } from "src/config/logger";
 import indexRotuer from "src/route/index";
+import apiRotuer from "src/route/api";
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use(morgan("combined", { stream }));
  * Route
  */
 app.use("/", indexRotuer);
+app.use("/api", apiRotuer);
 
 /**
  * Swagger
