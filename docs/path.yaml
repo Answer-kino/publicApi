@@ -2,4 +2,5 @@
 #   $ref: "common/common.imgs.yaml"
 # /form/{saveName}:
 #   $ref: "common/common.formFiles.yaml"
-
+/api/shp2geojson:
+  $ref: "ogr2ogr/shp2geojson.yaml"

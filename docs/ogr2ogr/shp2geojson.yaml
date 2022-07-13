@@ -1,0 +1,33 @@
+post:
+  tags:
+    - ogr2ogr
+  summary: shp convert to GeoJson
+  produces:
+    - application/json
+  description: "shp convert to GeoJson"
+  oprationId: shp2geojson
+  requestBody:
+    required: true
+    content:
+      multipart/form-data:
+        schema:
+          type: object
+          properties:
+            shpFile:
+              type: array
+              items:
+                type: string
+                format: binary
+        encoding:
+          shpFile:
+            contentType: image/png, image/jpeg, image/jpg, image/gif
+
+  responses:
+    "200":
+      $ref: "../../swagger.yaml#/components/responses/SuccessOnlyResponse"
+    "204":
+      $ref: "../../swagger.yaml#/components/responses/NoContentResponse"
+    "400":
+      $ref: "../../swagger.yaml#/components/responses/BadRequestResponse"
+    "5XX":
+      $ref: "../../swagger.yaml#/components/responses/ErrorResponse"
